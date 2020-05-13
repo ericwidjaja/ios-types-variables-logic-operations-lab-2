@@ -144,7 +144,6 @@ if randomNum % 2 == 0 {print ("Heads")
 } else if randomNum % 2 != 0 {print ("Tails")
 }
 ```
-
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -177,10 +176,9 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
-```
 //ANSWER:
 a, b, d, and e
-
+```
 ***
 ## Question 10
 
@@ -199,14 +197,13 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
-```
 //ANSWER:
-a. x && y                                                                            //false
-b. x || y || z == 1                                                                 //true
-c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y       //true
-d. (x && y) || z > 6                                                               //false
-e. !(z < 6) && !y && !x                                                         //false
-
+a. x && y   //false                                         
+b. x || y || z == 1     //true                        
+c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y //true
+d. (x && y) || z > 6             //false
+e. !(z < 6) && !y && !x          //false
+```
 ***
 ## Question 11
 
@@ -218,10 +215,9 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
-```
-//ANSWER: C
+//ANSWER: C 
 https://developer.apple.com/documentation/swift/int
-
+```
 ***
 ## Question 12
 
@@ -233,10 +229,9 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
-```
 //ANSWER: 
 All of them
-
+```
 
 ***
 ## Question 13
@@ -257,9 +252,8 @@ b %= c
 
 print(a + b + c)
 
-```
 //ANSWER: 30
-
+```
 ***
 ## Question 14
 
@@ -272,11 +266,12 @@ let div2 = 11.0 / 4.0
 2. The value of div2 is ________________________(or write "div2 will not compile")
 let isEqual = div == div2
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
-```
+
 //ANSWER:
 1. The value of div is  2
 2. The value of div2 is 2.75
 3. The value of isEqual is --> "isEqual will not compile" --> Binary operator '==' cannot be applied to operands of type 'Int' and 'Double'
+```
 ***
 ## Question 15
 ```swift
@@ -291,10 +286,9 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
-```
 //ANSWER:
-
 b. n is a Double
+```
 
 # Bonus 
 
