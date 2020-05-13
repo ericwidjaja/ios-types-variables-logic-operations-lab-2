@@ -20,7 +20,15 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+//
+var grade1 : Double = 7.0
+var grade2 : Double = 9.0
+var grade3 : Double = 5.0
+var yourGrade : Double = 6.75
+var avgClassGrade : Double = (grade1 + grade2 + grade3 + yourGrade)/4
+if yourGrade < avgClassGrade {print ("Below Average")
+} else if yourGrade > avgClassGrade {print ("Above Average")
+}
 ```
 
 ***
@@ -31,7 +39,17 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+<<<<<<< HEAD
+//
+if number % 2 == 0 {print ("EVEN")
+} else {print ("ODD")
+}
+
+=======
+// 
+if number % 2 == 0 {print ("EVEN")
+} else {print ("ODD")
+>>>>>>> 920762abec8ca4265c401d46c0e2cfb65f9b3e0d
 ```
 
 ***
@@ -43,7 +61,13 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+//
+var a = 12
+var b = 3
+if a % b == 0 {print("Divisible")
+} else {print ("Not Divisible")
+}
+
 ```
 
 ***
@@ -56,7 +80,17 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// 
+var a = 2
+var b = 3
+var c = 2
+
+if a == b || b == c || a == c {print("At Least Two Variables Have the Same Value")
+
+} else {print ("All the Values are Different")
+
+}
+
 ```
 
 ***
@@ -68,7 +102,15 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+//
+
+var baconAge = 6
+var eggsAge = 12
+if baconAge > 7 && eggsAge < 22 {print ("Throw Out Bacon")
+} else if baconAge < 7 && eggsAge > 21 {print("Throw Out Eggs")
+} else if baconAge > 7 && eggsAge > 21 {print ("Throw Out Bacon and Eggs")
+} else if baconAge <= 7 && eggsAge <= 21 {print ( "You can cook bacon and eggs")
+}
 ```
 
 ***
@@ -80,7 +122,13 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+//
+let year = 2014
+if year % 400 == 0 {print ("Leap Year!")
+} else if year % 100 == 0 {print ("Not a Leap Year")
+} else if year % 4 == 0 {print ("Leap Year!")
+} else {print ("Not a Leap Year")
+
 ```
 
 ***
@@ -91,7 +139,10 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+//
+if randomNum % 2 == 0 {print ("Heads")
+} else if randomNum % 2 != 0 {print ("Tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,22 +158,28 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// 
+if a < b && a < c && a < d {print (a)
+} else if b < a && b < c && b < d {print (b)
+} else if c < a && c < b && c < d {print (c)
+} else if d < a && d < b && d < c {print (d)
+}
 ```
-
 ***
 ## Question 9
 
 Which of the following expressions evaluate to true?
 
 ```swift
-a. 3 == 2 || 9 == 9
+a. 3 == 2 || 9 == 9                                 
 b. !(3 > 3)
 c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+//ANSWER:
+a, b, d, and e
 
 ***
 ## Question 10
@@ -130,9 +187,9 @@ e. !(3 != 3)
 Given the below, which of the following expressions evaluate to true?
 
 ```swift
- let x = 5 > 4
- let y = 100 / 10 == 1
- let z = 6
+let x = 5 > 4
+let y = 100 / 10 == 1
+let z = 6
 ```
 
 ```swift
@@ -143,7 +200,12 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+//ANSWER:
+a. x && y                                                                            //false
+b. x || y || z == 1                                                                 //true
+c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y       //true
+d. (x && y) || z > 6                                                               //false
+e. !(z < 6) && !y && !x                                                         //false
 
 ***
 ## Question 11
@@ -157,7 +219,8 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+//ANSWER: C
+https://developer.apple.com/documentation/swift/int
 
 ***
 ## Question 12
@@ -171,6 +234,9 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+//ANSWER: 
+All of them
+
 
 ***
 ## Question 13
@@ -192,6 +258,7 @@ b %= c
 print(a + b + c)
 
 ```
+//ANSWER: 30
 
 ***
 ## Question 14
@@ -204,27 +271,30 @@ let div = 11 / 4
 let div2 = 11.0 / 4.0
 2. The value of div2 is ________________________(or write "div2 will not compile")
 let isEqual = div == div2
-
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
-
-
 ```
+//ANSWER:
+1. The value of div is  2
+2. The value of div2 is 2.75
+3. The value of isEqual is --> "isEqual will not compile" --> Binary operator '==' cannot be applied to operands of type 'Int' and 'Double'
 ***
 ## Question 15
 ```swift
 var n = 7.5
 
 ```
-
 What is true about the variable n?
 
 ```swift
 a. n is a Float
-b. n is a Double
+b. n is a Double 
 c. n is a Decimal
 d. In is an Int
 
 ```
+//ANSWER:
+
+b. n is a Double
 
 # Bonus 
 
@@ -378,7 +448,5 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 ### Print the total amount of wheat that the farmer will harvest.
 
-<img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
 ```
-
