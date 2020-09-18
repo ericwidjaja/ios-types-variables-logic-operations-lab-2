@@ -435,6 +435,22 @@ Output:
 A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
+```swift
 
+input:
+
+let numberOfField = 10
+var wheatYield: Double = 50.0
+var weatherWasGood: Bool = true //-> increase output by 50%
+
+var outputResult: Double = 0.0
+
+if weatherWasGood == true {
+    outputResult = Double(numberOfField) * wheatYield * 1.5
+} else {
+   outputResult = Double(numberOfField) * wheatYield * 1
+}
+
+print("\nBased on these: \n  Number of fields:  \(numberOfField), \n  Wheat Yield/Field: \(wheatYield), \n  Was Weather Good?: \(weatherWasGood) \n\n The total amount of wheat harvested is equal to \(outputResult)")
 
 ```
