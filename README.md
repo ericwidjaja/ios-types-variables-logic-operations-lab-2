@@ -39,17 +39,11 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-<<<<<<< HEAD
-//
-if number % 2 == 0 {print ("EVEN")
-} else {print ("ODD")
+if number % 2 == 0 {
+    print("EVEN")
+} else {
+    print("ODD")
 }
-
-=======
-// 
-if number % 2 == 0 {print ("EVEN")
-} else {print ("ODD")
->>>>>>> 920762abec8ca4265c401d46c0e2cfb65f9b3e0d
 ```
 
 ***
